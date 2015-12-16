@@ -6,7 +6,8 @@
     $routeProvider.when("/registration", { templateUrl: "Templates/register.html", controller: "welcomeController", css: "Content/myCss/register.css" });
     $routeProvider.when("/userOverview", { templateUrl: "Templates/user-overview.html", controller: "welcomeController", css: "Content/myCss/user-overview.css" });
     $routeProvider.when("/editConfiguration", { templateUrl: "Templates/edit-configuration.html", controller: "welcomeController", css: "Content/myCss/edit-configuration.css" });
-    $routeProvider.when("/createConfiguration", { templateUrl: "Templates/create-configuration.html", controller: "welcomeController", css: "Content/myCss/edit-configuration.css" });
+    $routeProvider.when("/createConfiguration", { templateUrl: "Templates/create-configuration.html", controller: "createConfigController", css: "Content/myCss/edit-configuration.css" });
+    $routeProvider.otherwise({ redirectTo: "/" });
 
     $locationProvider.html5Mode(true);
 });

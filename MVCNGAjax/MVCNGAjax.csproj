@@ -306,14 +306,14 @@
     <Content Include="Content\myLess\variable.css" />
     <Content Include="Content\myLess\welcome.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\ValidationProject\createConfigController.js" />
     <Content Include="Scripts\ValidationProject\cssDirective.js" />
+    <Content Include="Scripts\ValidationProject\dataTimePicker.js" />
     <Content Include="Scripts\ValidationProject\environmentalController.js" />
-    <Content Include="Scripts\Environmental\EnvironmentalServices.js" />
-    <Content Include="Scripts\Environmental\environmentalModule.js" />
     <Content Include="Scripts\Events\eventController.js" />
     <Content Include="Scripts\Events\eventModule.js" />
     <Content Include="Content\myLess\configuration.less" />
@@ -445,27 +445,15 @@
     <Content Include="Templates\Speaker.html" />
     <Content Include="Templates\Talk.html" />
     <Content Include="Templates\en - troubleshoot.html" />
-    <Content Include="Views\Welcome\img\bg-welcome-1.jpg" />
-    <Content Include="Views\Welcome\img\bg-welcome-2.jpg" />
-    <Content Include="Views\Welcome\img\bg-welcome-3.jpg" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ConfigurationController.cs" />
-    <Compile Include="Controllers\EventsController.cs" />
-    <Compile Include="Controllers\LogInController.cs" />
-    <Compile Include="Controllers\RegistrationController.cs" />
-    <Compile Include="Controllers\WelcomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\EventsRepository.cs" />
-    <Compile Include="Models\FitBitt.cs" />
-    <Compile Include="Models\FitBittRepository.cs" />
-    <Compile Include="Models\SpeakerVM.cs" />
-    <Compile Include="Models\TalkVM.cs" />
     <Compile Include="Models\WunderBar.cs" />
     <Compile Include="Models\WunderBarRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -475,19 +463,9 @@
     <Content Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Views\Welcome\Welcome.cshtml" />
-    <Content Include="Views\LogIn\logIn.cshtml" />
-    <Content Include="Views\Registration\registration.cshtml" />
-    <Content Include="Views\HealtCare\healtCare.cshtml" />
-    <Content Include="Views\SelectSensor\selectSensor.cshtml" />
-    <Content Include="Views\Environmental\environmental.cshtml" />
-    <Content Include="Views\Environmental\environmentalDetails.cshtml" />
-    <Content Include="Views\HealtCare\healtCareDetails.cshtml" />
-    <Content Include="Views\Troubleshoot\environmentalTroubleshoot.cshtml" />
-    <Content Include="Views\Environmental\EnvironmentalLayout.cshtml" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Templates\ViewPage1.cshtml" />
     <Content Include="Views\Configuration\index.cshtml" />
     <None Include="Web.Debug.config">
@@ -499,8 +477,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\HealtCare\" />
-    <Folder Include="Views\Events\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
