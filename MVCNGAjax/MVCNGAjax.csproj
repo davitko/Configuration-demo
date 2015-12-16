@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{569DBD3A-947E-4A69-8884-8BC573B6A4DB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVCNGAjax</RootNamespace>
+    <AssemblyName>MVCNGAjax</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.1.2\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.1.2\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.1.2\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.1.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap.min.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\background\bg-environmental-2.jpg" />
+    <Content Include="Content\img\background\bg-environmental-3.jpg" />
+    <Content Include="Content\img\background\bg-environmental-4.jpg" />
+    <Content Include="Content\img\background\bg-environmental.jpg" />
+    <Content Include="Content\img\background\bg-healtCare.jpg" />
+    <Content Include="Content\img\background\bg-lgIn.jpg" />
+    <Content Include="Content\img\background\bg-measurement-enviromental-detail.jpg" />
+    <Content Include="Content\img\background\bg-measurement-healCare-detail.jpg" />
+    <Content Include="Content\img\background\bg-register.jpg" />
+    <Content Include="Content\img\background\bg-selectSensor-2.jpg" />
+    <Content Include="Content\img\background\bg-selectSensor-3.jpg" />
+    <Content Include="Content\img\background\bg-troubleshooting.jpg" />
+    <Content Include="Content\img\background\bg-welcome-1.jpg" />
+    <Content Include="Content\img\background\bg-welcome-2.jpg" />
+    <Content Include="Content\img\background\bg-welcome-3.jpg" />
+    <Content Include="Content\img\background\pattern-2.png" />
+    <Content Include="Content\img\user-milos-davitkovic.jpg" />
+    <Content Include="Content\myCss\bootstrap-datetimepicker-standalone.css" />
+    <Content Include="Content\myCss\bootstrap.css" />
+    <Content Include="Content\myCss\bootstrap.min.css" />
+    <Content Include="Content\myCss\carusel.css" />
+    <Content Include="Content\myCss\configuration.css" />
+    <Content Include="Content\myCss\datepicker.css" />
+    <Content Include="Content\myCss\demo-app-main.css" />
+    <Content Include="Content\myCss\edit-configuration.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\myCss\environmental.css" />
+    <Content Include="Content\myCss\font-awesome.css" />
+    <Content Include="Content\myCss\font-awesome.min.css" />
+    <Content Include="Content\myCss\healtCare.css" />
+    <Content Include="Content\myCss\logIn.css" />
+    <Content Include="Content\myCss\login\all.css" />
+    <Content Include="Content\myCss\login\animate.css" />
+    <Content Include="Content\myCss\login\bootstrap.min.css" />
+    <Content Include="Content\myCss\login\flat\aero%402x.png" />
+    <Content Include="Content\myCss\login\flat\aero.css" />
+    <Content Include="Content\myCss\login\flat\aero.png" />
+    <Content Include="Content\myCss\login\flat\all.css" />
+    <Content Include="Content\myCss\login\flat\blue%402x.png" />
+    <Content Include="Content\myCss\login\flat\blue.css" />
+    <Content Include="Content\myCss\login\flat\blue.png" />
+    <Content Include="Content\myCss\login\flat\flat%402x.png" />
+    <Content Include="Content\myCss\login\flat\flat.css" />
+    <Content Include="Content\myCss\login\flat\flat.png" />
+    <Content Include="Content\myCss\login\flat\green%402x.png" />
+    <Content Include="Content\myCss\login\flat\green.css" />
+    <Content Include="Content\myCss\login\flat\green.png" />
+    <Content Include="Content\myCss\login\flat\grey%402x.png" />
+    <Content Include="Content\myCss\login\flat\grey.css" />
+    <Content Include="Content\myCss\login\flat\grey.png" />
+    <Content Include="Content\myCss\login\flat\orange%402x.png" />
+    <Content Include="Content\myCss\login\flat\orange.css" />
+    <Content Include="Content\myCss\login\flat\orange.png" />
+    <Content Include="Content\myCss\login\flat\pink%402x.png" />
+    <Content Include="Content\myCss\login\flat\pink.css" />
+    <Content Include="Content\myCss\login\flat\pink.png" />
+    <Content Include="Content\myCss\login\flat\purple%402x.png" />
+    <Content Include="Content\myCss\login\flat\purple.css" />
+    <Content Include="Content\myCss\login\flat\purple.png" />
+    <Content Include="Content\myCss\login\flat\red%402x.png" />
+    <Content Include="Content\myCss\login\flat\red.css" />
+    <Content Include="Content\myCss\login\flat\red.png" />
+    <Content Include="Content\myCss\login\flat\yellow%402x.png" />
+    <Content Include="Content\myCss\login\flat\yellow.css" />
+    <Content Include="Content\myCss\login\flat\yellow.png" />
+    <Content Include="Content\myCss\login\font-awesome.min.css" />
+    <Content Include="Content\myCss\login\futurico\futurico%402x.png" />
+    <Content Include="Content\myCss\login\futurico\futurico.css" />
+    <Content Include="Content\myCss\login\futurico\futurico.png" />
+    <Content Include="Content\myCss\login\introjs.css" />
+    <Content Include="Content\myCss\login\jplist-custom.css" />
+    <Content Include="Content\myCss\login\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Content\myCss\login\jquery.news-ticker.css" />
+    <Content Include="Content\myCss\login\line\aero.css" />
+    <Content Include="Content\myCss\login\line\all.css" />
+    <Content Include="Content\myCss\login\line\blue.css" />
+    <Content Include="Content\myCss\login\line\green.css" />
+    <Content Include="Content\myCss\login\line\grey.css" />
+    <Content Include="Content\myCss\login\line\line%402x.png" />
+    <Content Include="Content\myCss\login\line\line.css" />
+    <Content Include="Content\myCss\login\line\line.png" />
+    <Content Include="Content\myCss\login\line\orange.css" />
+    <Content Include="Content\myCss\login\line\pink.css" />
+    <Content Include="Content\myCss\login\line\purple.css" />
+    <Content Include="Content\myCss\login\line\red.css" />
+    <Content Include="Content\myCss\login\line\yellow.css" />
+    <Content Include="Content\myCss\login\main.css" />
+    <Content Include="Content\myCss\login\minimal\aero%402x.png" />
+    <Content Include="Content\myCss\login\minimal\aero.css" />
+    <Content Include="Content\myCss\login\minimal\aero.png" />
+    <Content Include="Content\myCss\login\minimal\all.css" />
+    <Content Include="Content\myCss\login\minimal\blue%402x.png" />
+    <Content Include="Content\myCss\login\minimal\blue.css" />
+    <Content Include="Content\myCss\login\minimal\blue.png" />
+    <Content Include="Content\myCss\login\minimal\green%402x.png" />
+    <Content Include="Content\myCss\login\minimal\green.css" />
+    <Content Include="Content\myCss\login\minimal\green.png" />
+    <Content Include="Content\myCss\login\minimal\grey%402x.png" />
+    <Content Include="Content\myCss\login\minimal\grey.css" />
+    <Content Include="Content\myCss\login\minimal\grey.png" />
+    <Content Include="Content\myCss\login\minimal\minimal%402x.png" />
+    <Content Include="Content\myCss\login\minimal\minimal.css" />
+    <Content Include="Content\myCss\login\minimal\minimal.png" />
+    <Content Include="Content\myCss\login\minimal\orange%402x.png" />
+    <Content Include="Content\myCss\login\minimal\orange.css" />
+    <Content Include="Content\myCss\login\minimal\orange.png" />
+    <Content Include="Content\myCss\login\minimal\pink%402x.png" />
+    <Content Include="Content\myCss\login\minimal\pink.css" />
+    <Content Include="Content\myCss\login\minimal\pink.png" />
+    <Content Include="Content\myCss\login\minimal\purple%402x.png" />
+    <Content Include="Content\myCss\login\minimal\purple.css" />
+    <Content Include="Content\myCss\login\minimal\purple.png" />
+    <Content Include="Content\myCss\login\minimal\red%402x.png" />
+    <Content Include="Content\myCss\login\minimal\red.css" />
+    <Content Include="Content\myCss\login\minimal\red.png" />
+    <Content Include="Content\myCss\login\minimal\yellow%402x.png" />
+    <Content Include="Content\myCss\login\minimal\yellow.css" />
+    <Content Include="Content\myCss\login\minimal\yellow.png" />
+    <Content Include="Content\myCss\login\nestable.css" />
+    <Content Include="Content\myCss\login\pace.css" />
+    <Content Include="Content\myCss\login\polaris\polaris%402x.png" />
+    <Content Include="Content\myCss\login\polaris\polaris.css" />
+    <Content Include="Content\myCss\login\polaris\polaris.png" />
+    <Content Include="Content\myCss\login\square\aero%402x.png" />
+    <Content Include="Content\myCss\login\square\aero.css" />
+    <Content Include="Content\myCss\login\square\aero.png" />
+    <Content Include="Content\myCss\login\square\all.css" />
+    <Content Include="Content\myCss\login\square\blue%402x.png" />
+    <Content Include="Content\myCss\login\square\blue.css" />
+    <Content Include="Content\myCss\login\square\blue.png" />
+    <Content Include="Content\myCss\login\square\green%402x.png" />
+    <Content Include="Content\myCss\login\square\green.css" />
+    <Content Include="Content\myCss\login\square\green.png" />
+    <Content Include="Content\myCss\login\square\grey%402x.png" />
+    <Content Include="Content\myCss\login\square\grey.css" />
+    <Content Include="Content\myCss\login\square\grey.png" />
+    <Content Include="Content\myCss\login\square\orange%402x.png" />
+    <Content Include="Content\myCss\login\square\orange.css" />
+    <Content Include="Content\myCss\login\square\orange.png" />
+    <Content Include="Content\myCss\login\square\pink%402x.png" />
+    <Content Include="Content\myCss\login\square\pink.css" />
+    <Content Include="Content\myCss\login\square\pink.png" />
+    <Content Include="Content\myCss\login\square\purple%402x.png" />
+    <Content Include="Content\myCss\login\square\purple.css" />
+    <Content Include="Content\myCss\login\square\purple.png" />
+    <Content Include="Content\myCss\login\square\red%402x.png" />
+    <Content Include="Content\myCss\login\square\red.css" />
+    <Content Include="Content\myCss\login\square\red.png" />
+    <Content Include="Content\myCss\login\square\square%402x.png" />
+    <Content Include="Content\myCss\login\square\square.css" />
+    <Content Include="Content\myCss\login\square\square.png" />
+    <Content Include="Content\myCss\login\square\yellow%402x.png" />
+    <Content Include="Content\myCss\login\square\yellow.css" />
+    <Content Include="Content\myCss\login\square\yellow.png" />
+    <Content Include="Content\myCss\login\style-responsive.css" />
+    <Content Include="Content\myCss\login\zabuto_calendar.min.css" />
+    <Content Include="Content\myCss\main.css" />
+    <Content Include="Content\myCss\menu.css" />
+    <Content Include="Content\myCss\register.css" />
+    <Content Include="Content\myCss\sensorSelect.css" />
+    <Content Include="Content\myCss\sidebar-menu.css" />
+    <Content Include="Content\myCss\troubleshoot.css" />
+    <Content Include="Content\myCss\user-overview.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\myCss\variable.css" />
+    <Content Include="Content\myCss\welcome.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\myLess\carusel.css.map">
+      <DependentUpon>carusel.css</DependentUpon>
+    </Content>
+    <None Include="Content\myLess\carusel.less" />
+    <Content Include="Content\myLess\carusel.css">
+      <DependentUpon>carusel.less</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\carusel.min.css">
+      <DependentUpon>carusel.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\configuration.css" />
+    <Content Include="Content\myLess\demo-app-main.css" />
+    <Content Include="Content\myLess\environmental.css" />
+    <Content Include="Content\myLess\environmental.min.css">
+      <DependentUpon>environmental.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\healtCare.css" />
+    <Content Include="Content\myLess\healtCare.min.css">
+      <DependentUpon>healtCare.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\logIn.css" />
+    <Content Include="Content\myLess\main.css">
+      <DependentUpon>main.less</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\menu.css" />
+    <Content Include="Content\myLess\menu.min.css">
+      <DependentUpon>menu.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\register.css" />
+    <Content Include="Content\myLess\register.min.css">
+      <DependentUpon>register.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\sensorSelect.css" />
+    <Content Include="Content\myLess\troubleshoot.css" />
+    <Content Include="Content\myLess\troubleshoot.min.css">
+      <DependentUpon>troubleshoot.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\variable.css" />
+    <Content Include="Content\myLess\welcome.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\ValidationProject\cssDirective.js" />
+    <Content Include="Scripts\ValidationProject\environmentalController.js" />
+    <Content Include="Scripts\Environmental\EnvironmentalServices.js" />
+    <Content Include="Scripts\Environmental\environmentalModule.js" />
+    <Content Include="Scripts\Events\eventController.js" />
+    <Content Include="Scripts\Events\eventModule.js" />
+    <Content Include="Content\myLess\configuration.less" />
+    <Content Include="Content\myLess\demo-app-main.less" />
+    <Content Include="Content\myLess\environmental.less" />
+    <Content Include="Content\myLess\healtCare.less" />
+    <Content Include="Content\myLess\logIn.less" />
+    <Content Include="Content\myLess\menu.less" />
+    <Content Include="Content\myLess\register.less" />
+    <Content Include="Content\myLess\sensorSelect.less" />
+    <Content Include="Content\myLess\troubleshoot.less" />
+    <Content Include="Content\myLess\variable.less" />
+    <Content Include="Content\myLess\welcome.less" />
+    <Content Include="Content\myLess\menu.css.map">
+      <DependentUpon>menu.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\register.css.map">
+      <DependentUpon>register.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\healtCare.css.map">
+      <DependentUpon>healtCare.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\environmental.css.map">
+      <DependentUpon>environmental.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\troubleshoot.css.map">
+      <DependentUpon>troubleshoot.css</DependentUpon>
+    </Content>
+    <Content Include="Content\myLess\main.less" />
+    <Content Include="Content\myLess\main.css.map">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="Scripts\angular-css.min.js" />
+    <Content Include="Content\myLess\sidebar-menu.less" />
+    <Content Include="Content\myLess\user-overview.less" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Events\EventsService.js" />
+    <Content Include="Scripts\Events\speakerController.js" />
+    <Content Include="Scripts\Events\talkController.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\myScripts\angular.min.js" />
+    <Content Include="Scripts\myScripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\myScripts\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\myScripts\bootstrap.min.js" />
+    <Content Include="Scripts\myScripts\carusel.js" />
+    <Content Include="Scripts\myScripts\jquery.js" />
+    <Content Include="Scripts\myScripts\less.min.js" />
+    <Content Include="Scripts\myScripts\login\animation.js" />
+    <Content Include="Scripts\myScripts\login\bootstrap-hover-dropdown.js" />
+    <Content Include="Scripts\myScripts\login\bootstrap.js" />
+    <Content Include="Scripts\myScripts\login\bootstrap.min.js" />
+    <Content Include="Scripts\myScripts\login\charts-chartjs.js" />
+    <Content Include="Scripts\myScripts\login\charts-flotchart.js" />
+    <Content Include="Scripts\myScripts\login\charts-highchart-area.js" />
+    <Content Include="Scripts\myScripts\login\charts-highchart-column-bar.js" />
+    <Content Include="Scripts\myScripts\login\charts-highchart-combinations.js" />
+    <Content Include="Scripts\myScripts\login\charts-highchart-dynamic.js" />
+    <Content Include="Scripts\myScripts\login\charts-highchart-line.js" />
+    <Content Include="Scripts\myScripts\login\charts-highchart-more.js" />
+    <Content Include="Scripts\myScripts\login\charts-highchart-pie.js" />
+    <Content Include="Scripts\myScripts\login\charts-highchart-scatter-bubble.js" />
+    <Content Include="Scripts\myScripts\login\custom.min.js" />
+    <Content Include="Scripts\myScripts\login\data.js" />
+    <Content Include="Scripts\myScripts\login\drilldown.js" />
+    <Content Include="Scripts\myScripts\login\exporting.js" />
+    <Content Include="Scripts\myScripts\login\funnel.js" />
+    <Content Include="Scripts\myScripts\login\highchart.js" />
+    <Content Include="Scripts\myScripts\login\highcharts-more.js" />
+    <Content Include="Scripts\myScripts\login\highcharts.js" />
+    <Content Include="Scripts\myScripts\login\holder.js" />
+    <Content Include="Scripts\myScripts\login\html5shiv.js" />
+    <Content Include="Scripts\myScripts\login\icheck.min.js" />
+    <Content Include="Scripts\myScripts\login\index.js" />
+    <Content Include="Scripts\myScripts\login\jplist.js" />
+    <Content Include="Scripts\myScripts\login\jplist.min.js" />
+    <Content Include="Scripts\myScripts\login\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\myScripts\login\jquery-migrate-1.2.1.min.js" />
+    <Content Include="Scripts\myScripts\login\jquery-ui.js" />
+    <Content Include="Scripts\myScripts\login\jquery.cookie.js" />
+    <Content Include="Scripts\myScripts\login\jquery.flot.categories.js" />
+    <Content Include="Scripts\myScripts\login\jquery.flot.fillbetween.js" />
+    <Content Include="Scripts\myScripts\login\jquery.flot.js" />
+    <Content Include="Scripts\myScripts\login\jquery.flot.pie.js" />
+    <Content Include="Scripts\myScripts\login\jquery.flot.resize.js" />
+    <Content Include="Scripts\myScripts\login\jquery.flot.spline.js" />
+    <Content Include="Scripts\myScripts\login\jquery.flot.stack.js" />
+    <Content Include="Scripts\myScripts\login\jquery.flot.tooltip.js" />
+    <Content Include="Scripts\myScripts\login\jquery.menu.js" />
+    <Content Include="Scripts\myScripts\login\jquery.metisMenu.js" />
+    <Content Include="Scripts\myScripts\login\jquery.nestable.js" />
+    <Content Include="Scripts\myScripts\login\jquery.news-ticker.js" />
+    <Content Include="Scripts\myScripts\login\jquery.slimscroll.js" />
+    <Content Include="Scripts\myScripts\login\main.js" />
+    <Content Include="Scripts\myScripts\login\modernizr.min.js" />
+    <Content Include="Scripts\myScripts\login\pace.min.js" />
+    <Content Include="Scripts\myScripts\login\respond.min.js" />
+    <Content Include="Scripts\myScripts\login\responsive-tabs.js" />
+    <Content Include="Scripts\myScripts\login\ui-nestable-list.js" />
+    <Content Include="Scripts\myScripts\login\zabuto_calendar.min.js" />
+    <Content Include="Scripts\myScripts\menu.js" />
+    <Content Include="Scripts\myScripts\moment.js" />
+    <Content Include="Scripts\ValidationProject\healtCareController.js" />
+    <Content Include="Scripts\ValidationProject\validationModule.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Scripts\ValidationProject\ValidationServices.js" />
+    <Content Include="Scripts\ValidationProject\welcomeController.js" />
+    <Content Include="Templates\AddTalk.html" />
+    <Content Include="Templates\create-configuration.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\edit-configuration.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\environmental-details.html" />
+    <Content Include="Templates\environmental.html" />
+    <Content Include="Templates\healtCare-details.html" />
+    <Content Include="Templates\healtCare.html" />
+    <Content Include="Templates\user-overview.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\welcome.html" />
+    <Content Include="Templates\layout.html" />
+    <Content Include="Templates\logIn.html" />
+    <Content Include="Templates\register.html" />
+    <Content Include="Templates\sensorSelect.html" />
+    <Content Include="Templates\Speaker.html" />
+    <Content Include="Templates\Talk.html" />
+    <Content Include="Templates\en - troubleshoot.html" />
+    <Content Include="Views\Welcome\img\bg-welcome-1.jpg" />
+    <Content Include="Views\Welcome\img\bg-welcome-2.jpg" />
+    <Content Include="Views\Welcome\img\bg-welcome-3.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ConfigurationController.cs" />
+    <Compile Include="Controllers\EventsController.cs" />
+    <Compile Include="Controllers\LogInController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\WelcomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EventsRepository.cs" />
+    <Compile Include="Models\FitBitt.cs" />
+    <Compile Include="Models\FitBittRepository.cs" />
+    <Compile Include="Models\SpeakerVM.cs" />
+    <Compile Include="Models\TalkVM.cs" />
+    <Compile Include="Models\WunderBar.cs" />
+    <Compile Include="Models\WunderBarRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Views\Welcome\Welcome.cshtml" />
+    <Content Include="Views\LogIn\logIn.cshtml" />
+    <Content Include="Views\Registration\registration.cshtml" />
+    <Content Include="Views\HealtCare\healtCare.cshtml" />
+    <Content Include="Views\SelectSensor\selectSensor.cshtml" />
+    <Content Include="Views\Environmental\environmental.cshtml" />
+    <Content Include="Views\Environmental\environmentalDetails.cshtml" />
+    <Content Include="Views\HealtCare\healtCareDetails.cshtml" />
+    <Content Include="Views\Troubleshoot\environmentalTroubleshoot.cshtml" />
+    <Content Include="Views\Environmental\EnvironmentalLayout.cshtml" />
+    <Content Include="Templates\ViewPage1.cshtml" />
+    <Content Include="Views\Configuration\index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Scripts\HealtCare\" />
+    <Folder Include="Views\Events\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>48551</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48551/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

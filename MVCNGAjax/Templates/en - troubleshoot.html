@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Forms | Forms</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+    <!--Loading bootstrap css-->
+    <!--    Fonts -->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <!--    Styles-->
+    <link type="text/css" rel="stylesheet" href="css/logIn/jquery-ui-1.10.4.custom.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn/animate.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn/all.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn/main.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn/style-responsive.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn/zabuto_calendar.min.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn/pace.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn/jquery.news-ticker.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn.css">
+    <link type="text/css" rel="stylesheet" href="css/logIn.css">
+    <link type="text/css" rel="stylesheet" href="css/environmental.css">
+    <link type="text/css" rel="stylesheet" href="css/healtCare.css">
+    <link type="text/css" rel="stylesheet" href="css/troubleshoot.css">
+</head>
+
+<body>
+    <div class="row table-display-frame">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+            <div class="panel panel-blue">
+                <div class="panel-heading">Troubleshooting questions</div>
+                <div class="panel-body">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Inactivity Check</a>
+        </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">Was the device use?</div>
+                                <button type="button" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                                <button type="button" data-toggle="modal" data-target="#inactivity-no" class="btn btn-danger btn-troubleshoot-answer">No</button>
+
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Data provenance</a>
+        </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">Did some one else used the device ?</div>
+                                <button type="button" data-toggle="modal" data-target="#dataProvenance-yes" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                                <button type="button" class="btn btn-danger btn-troubleshoot-answer">No</button>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Calibration Check</a>
+        </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Is calibration ok?</div>
+                                <button type="button" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                                <button type="button" data-toggle="modal" data-target="#calibrationCheck-no" class="btn btn-danger btn-troubleshoot-answer">No</button>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Battery Issue</a>
+        </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">Do you have some battery issue ?</div>
+                                <button type="button" data-toggle="modal" data-target="#batteryIssue-yes" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                                <button type="button" class="btn btn-danger btn-troubleshoot-answer">No</button>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Calibration Check</a>
+        </h4>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body">Performed prescribed activities?</div>
+                                <button type="button" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                                <button type="button" data-toggle="modal" data-target="#performedActivities-no" class="btn btn-danger btn-troubleshoot-answer">No</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row control-button-frame">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 back-table-button">
+                            <a href="enviromental-details.html">
+                                <button type="button" class="btn btn-primary btn-table-back"><i class="fa fa-angle-left"></i>&#32;&#32;&#32;back to Measurements List</button>
+                            </a>
+                        </div>
+                        <!--
+   <div class="col-lg-4 col-md-5 col-sm-6 col-xs-7 control-table-button">
+    <button type="button" class="btn btn-success btn-table-control"><i class="fa fa-angle-left"></i>&#32;&#32;&#32; Previous</button>
+    <button type="button" class="btn btn-success btn-table-control">Next&#32;&#32;&#32;<i class="fa fa-angle-right"></i></button>
+</div>
+-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Inactivity check -->
+    <div class="modal fade" id="inactivity-no" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Inactivity check Advice</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>DEVICE NOT WORK</h4>
+                    <p>Please wear the device</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Data provenance -->
+    <div class="modal fade" id="dataProvenance-yes" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Data provenance Advice</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>WRONG USER</h4>
+                    <p>Please do not let others use your device.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Calibration Check-->
+    <div class="modal fade" id="calibrationCheck-no" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Calibration Check Advice</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>CALIBRATION ISSUE</h4>
+                    <p>Please recalibrate your device.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Battery Issue -->
+    <div class="modal fade" id="batteryIssue-yes" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Battery Advice</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>BATTERY ISSUE</h4>
+                    <p>Please check the batteries.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Performed prescribed activities -->
+    <div class="modal fade" id="performedActivities-no" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Performed prescribed activities Advice</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>ADHERENCE ISSUE</h4>
+                    <p>Please adhere to the treatment plan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--END CONTENT-->
+    <!--BEGIN FOOTER-->
+    <div id="footer">
+        <!--
+        <div class="copyright">
+    <a href="http://themifycloud.com">2014 © KAdmin Responsive Multi-Purpose Template</a></div>
+-->
+    </div>
+    <!--END FOOTER-->
+    </div>
+    <!--END PAGE WRAPPER-->
+    </div>
+    </div>
+    <script src="script/logIn/jquery-1.10.2.min.js"></script>
+    <script src="script/logIn/jquery-migrate-1.2.1.min.js"></script>
+    <script src="script/logIn/jquery-ui.js"></script>
+    <script src="script/logIn/bootstrap.min.js"></script>
+    <script src="script/logIn/bootstrap-hover-dropdown.js"></script>
+    <script src="script/logIn/html5shiv.js"></script>
+    <script src="script/logIn/respond.min.js"></script>
+    <script src="script/logIn/jquery.metisMenu.js"></script>
+    <script src="script/logIn/jquery.slimscroll.js"></script>
+    <script src="script/logIn/jquery.cookie.js"></script>
+    <script src="script/logIn/icheck.min.js"></script>
+    <script src="script/logIn/custom.min.js"></script>
+    <script src="script/logIn/jquery.news-ticker.js"></script>
+    <script src="script/logIn/jquery.menu.js"></script>
+    <script src="script/logIn/pace.min.js"></script>
+    <script src="script/logIn/holder.js"></script>
+    <script src="script/logIn/responsive-tabs.js"></script>
+    <script src="script/logIn/jquery.flot.js"></script>
+    <script src="script/logIn/jquery.flot.categories.js"></script>
+    <script src="script/logIn/jquery.flot.pie.js"></script>
+    <script src="script/logIn/jquery.flot.tooltip.js"></script>
+    <script src="script/logIn/jquery.flot.resize.js"></script>
+    <script src="script/logIn/jquery.flot.fillbetween.js"></script>
+    <script src="script/logIn/jquery.flot.stack.js"></script>
+    <script src="script/logIn/jquery.flot.spline.js"></script>
+    <script src="script/logIn/zabuto_calendar.min.js"></script>
+    <script src="script/logIn/index.js"></script>
+    <!--LOADING SCRIPTS FOR CHARTS-->
+    <script src="script/logIn/highcharts.js"></script>
+    <script src="script/logIn/data.js"></script>
+    <script src="script/logIn/drilldown.js"></script>
+    <script src="script/logIn/exporting.js"></script>
+    <script src="script/logIn/highcharts-more.js"></script>
+    <script src="script/logIn/charts-highchart-pie.js"></script>
+    <script src="script/logIn/charts-highchart-more.js"></script>
+    <!--    Less -->
+    <script src="./script/less.min.js" type="text/javascript"></script>
+    <!--CORE JAVASCRIPT-->
+    <script src="script/logIn/main.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-145464-12', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>

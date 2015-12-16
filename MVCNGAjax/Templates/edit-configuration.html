@@ -1,0 +1,808 @@
+﻿<div class="row editConfig-frame datepickerdemoBasicUsage">
+    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+        <div class="panel panel-orange">
+            <div class="panel-heading">
+                Edit Configuration
+            </div>
+            <div class="panel-body pan">
+                <form action="#">
+                    <div class="form-body pal">
+                        <div class="form-group">
+                            <div class="input-icon right">
+                                <!--                                    <i class="fa fa-user"></i>-->
+                                <input id="inputName" type="text" placeholder="Title" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon right">
+                                <!--                                    <i class="fa fa-envelope"></i>-->
+                                <input id="inputEmail" type="text" placeholder="Description" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="createdBy-input-label">Created by:</label>
+                            <select class="form-control">
+                                <option value="0">Marina Stevanovic</option>
+                                <option value="1">Milos Davitkovic</option>
+                                <option value="2">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon right">
+                                <!--                                    <i class="fa fa-envelope"></i>-->
+                                <input id="inputEmail" type="text" placeholder="Create Date" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="inputLastName" type="text" placeholder="Expiration Date" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="inputLastName" type="text" placeholder="Expiration Date" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default ">
+                            <div class="panel-heading">
+                                <div class="col-lg-6">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Select Application</a>
+                                    </h4>
+                                </div>
+                                <div class="search-panel-heading col-lg-5">
+                                    <form class="navbar-form navbar-left" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control search-panel" placeholder="Search">
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="search-panel-submit col-lg-1 col-lg-offset-0">
+                                    <button type="submit" class="btn btn-default btn-search"><i class=" fa fa-search "></i></button>
+                                </div>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="input-group app-check col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row head-row-checkbox-group">
+                                            <div class="col-lg-2 col-edit-checkbox">
+                                                <span class="input-group-addon">
+                                                    <!--                                               <input class="edit-checkbox" type="checkbox" aria-label="...">-->
+                                                </span>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <span class="checkbox-text">
+                                                    <h4>Name</h4>
+                                                </span>
+                                            </div>
+
+                                            <div class="col-lg-2">
+                                                <h4>Details</h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="panel-content">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Windows Mobile application</h4>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#app-detail" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Android application</h4>
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#app-detail" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>IOS application</h4>
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#app-detail" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <div class="col-lg-6">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Select Device</a>
+                                    </h4>
+                                </div>
+                                <div class="search-panel-heading col-lg-5 ">
+                                    <form class="" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control search-panel" placeholder="Search">
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="search-panel-submit col-lg-1">
+                                    <button type="submit" class="btn btn-default btn-search"><i class=" fa fa-search "></i></button>
+                                </div>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="input-group app-check col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row head-row-checkbox-group">
+                                            <div class="col-lg-2 col-edit-checkbox">
+                                                <span class="input-group-addon">
+                                                    <!--                                             <input class="edit-checkbox" type="checkbox" aria-label="...">-->
+                                                </span>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <span class="checkbox-text">
+                                                    <h4>Name</h4>
+                                                </span>
+                                            </div>
+
+                                            <div class="col-lg-2">
+                                                <h4>Details</h4>
+                                            </div>
+                                        </div>
+                                        <div class="panel-content">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Wunderbar</h4>
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#device-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Wunderbar 1</h4>
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#device-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Wunderbar 1</h4>
+                                                    </span>
+                                                </div>
+
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#device-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Wunderbar 1</h4>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#device-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default ">
+                            <div class="panel-heading">
+                                <div class="col-lg-6">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Quolifiers</a>
+                                    </h4>
+                                </div>
+                                <div class="search-panel-heading col-lg-5 ">
+                                    <form class="" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control search-panel" placeholder="Search">
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="search-panel-submit col-lg-1 col-lg-offset-0">
+                                    <button type="submit" class="btn btn-default btn-search"><i class=" fa fa-search "></i></button>
+                                </div>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="input-group app-check col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row head-row-checkbox-group">
+                                            <div class="col-lg-2 col-edit-checkbox">
+                                                <span class="input-group-addon">
+                                                    <!--                                                       <input class="edit-checkbox" type="checkbox" aria-label="...">-->
+                                                </span>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <span class="checkbox-text">
+                                                    <h4>Name</h4>
+                                                </span>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <h4>Details</h4>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <h4>Functions</h4>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <h4>References</h4>
+                                            </div>
+                                        </div>
+                                        <div class="panel-content">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <span class="checkbox-text">
+                                                        <h4>Q1</h4>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#quolifiers-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <span class="checkbox-text">
+                                                        <h4>distance</h4>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#fn-distance-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-wrench"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <span class="checkbox-text">
+                                                        <h4>Q2</h4>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#quolifiers-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <span class="checkbox-text">
+                                                        <h4>range</h4>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#fn-range-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-wrench"></i></button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <span class="checkbox-text">
+                                                        <h4>Q3</h4>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#quolifiers-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-bars"></i></button>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <span class="checkbox-text">
+                                                        <h4>distance</h4>
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-2">
+                                                    <button type="button" data-toggle="modal" data-target="#fn-distance-details" class="btn btn-default btn-troubleshoot-answer"><i class="fa fa-wrench"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default ">
+                            <div class="panel-heading">
+                                <div class="col-lg-3">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Frequency</a>
+                                    </h4>
+                                </div>
+                                <!--
+                                                                   <div class="search-panel-heading col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-1">
+                                    <form class="" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control search-panel" placeholder="Search">
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="search-panel-submit col-lg-1 col-lg-offset-0">
+                                    <button type="submit" class="btn btn-default btn-search"><i class=" fa fa-search "></i></button>
+                                </div>
+                                -->
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="input-group app-check col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row">
+                                            <!--
+                                                                                          <div class="col-lg-12 col-edit-checkbox">
+                                                <span class="input-group-addon">
+                                                                                           <input id="inputName" type="text" placeholder="Starting point" class="form-control" />
+                                                                                        </span>
+                                            </div>
+                                            -->
+                                            <div class="col-lg-7">
+                                                <span class="input-group-addon">
+                                                    <input id="inputName" type="text" placeholder="Frequency" class="form-control" />
+                                                </span>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <div class="form-group">
+                                                    <h4 class="edit-input-label">Unit:</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <select class="form-control">
+                                                        <option value="0">hour</option>
+                                                        <option value="1">minute</option>
+                                                        <option value="2">second</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default ">
+                            <div class="panel-heading">
+                                <div class="col-lg-3">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Member</a>
+                                    </h4>
+                                </div>
+                                <div class="search-panel-heading col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-1">
+                                    <form class="" role="search">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control search-panel" placeholder="Search">
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="search-panel-submit col-lg-1 col-lg-offset-0">
+                                    <button type="submit" class="btn btn-default btn-search"><i class=" fa fa-search "></i></button>
+                                </div>
+                            </div>
+
+                            <div id="collapse5" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div class="input-group app-check col-lg-12 col-md-12 col-sm-12">
+                                        <div class="row head-row-checkbox-group">
+                                            <div class="col-lg-2 col-edit-checkbox">
+                                                <span class="input-group-addon">
+                                                    <!--                                                <input class="edit-checkbox" type="checkbox" aria-label="...">-->
+                                                </span>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <span class="checkbox-text">
+                                                    <h4>Member name</h4>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="panel-content">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Marina Stevanovic</h4>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Milos Davitkovic</h4>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Miroslav Naumovski</h4>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-2 col-edit-checkbox">
+                                                    <span class="input-group-addon">
+                                                        <input class="edit-checkbox" type="checkbox" aria-label="...">
+                                                    </span>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="checkbox-text">
+                                                        <h4>Milos Zivkovic</h4>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group mbn checkbox-form">
+                            <div class="checkbox checkbox-terms-conditions">
+                                <label>
+                                    <input tabindex="5" type="checkbox" />&nbsp; I agree with the Terms and Conditions
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions text-right pal">
+
+                        <button type="button" class="btn btn-primary btn-form-submit" data-toggle="modal" data-target="#checkout-dialog">
+                            Edit
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--END CONTENT-->
+<!--BEGIN FOOTER-->
+<!-- Modal -->
+<div id="checkout-dialog" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add new Configuration</h4>
+            </div>
+            <div class="modal-body">
+                <h4>Are you sure ?!</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Modal Inactivity check -->
+<div class="modal fade" id="app-detail" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Application ... Details</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row table-display-frame">
+                    <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                        <div class="panel panel-green">
+                            <div class="panel-body panel-body-modal">
+                                <table class="table table-hover table-bordered display-table col-lg-10">
+                                    <thead>
+                                        <tr class="heading-row">
+                                            <th>Id.</th>
+                                            <th>Code</th>
+                                            <th>Description</th>
+                                            <th>Company</th>
+                                            <th>Tags</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="active">
+                                            <td>1</td>
+                                            <td>123</td>
+                                            <td>Windows Mobile Application</td>
+                                            <td>LANCE</td>
+                                            <td>#windows #mobile #app</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Data provenance -->
+<div class="modal fade" id="device-details" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Device...details</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row table-display-frame">
+                    <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                        <div class="panel panel-green">
+                            <div class="panel-body panel-body-modal">
+                                <table class="table table-hover table-bordered display-table col-lg-10">
+                                    <thead>
+                                        <tr class="heading-row">
+                                            <th>Id.</th>
+                                            <th>Code</th>
+                                            <th>Description</th>
+                                            <th>Category</th>
+                                            <th>Group</th>
+                                            <th>Type</th>
+                                            <th>Function</th>
+                                            <th>Valorization</th>
+                                            <th>Troubleshooting</th>
+                                            <th>Sensor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="active">
+                                            <td>1</td>
+                                            <td>123</td>
+                                            <td>Wunderbar</td>
+                                            <td>Environmental and Health care</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Calibration Check-->
+<div class="modal fade" id="quolifiers-details" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Quolifiers...detils</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row table-display-frame">
+                    <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0">
+                        <div class="panel panel-green">
+                            <div class="panel-body panel-body-modal">
+                                <table class="table table-hover table-bordered display-table col-lg-10">
+                                    <thead>
+                                        <tr class="heading-row">
+                                            <th>Id.</th>
+                                            <th>Code</th>
+                                            <th>Description</th>
+                                            <th>Category</th>
+                                            <th>Group</th>
+                                            <th>Type</th>
+                                            <th>Function</th>
+                                            <th>Valorization</th>
+                                            <th>Troubleshooting</th>
+                                            <th>Sensor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="active">
+                                            <td>1</td>
+                                            <td>123</td>
+                                            <td>Q1</td>
+                                            <td>A</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                            <td>Het is al geruime tijd een</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Data provenance -->
+<div class="modal fade" id="fn-distance-details" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Function Distance references details</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <div class="input-icon right">
+                        <!--                                    <i class="fa fa-user"></i>-->
+                        <input id="inputName" type="text" placeholder="Distance Reference" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon right">
+                        <!--                                    <i class="fa fa-user"></i>-->
+                        <input id="inputName" type="text" placeholder="Distance Min" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon right">
+                        <!--                                    <i class="fa fa-user"></i>-->
+                        <input id="inputName" type="text" placeholder="Distance Max" class="form-control" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Data provenance -->
+<div class="modal fade" id="fn-range-details" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Function Range references details</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <div class="input-icon right">
+                        <!--                                    <i class="fa fa-user"></i>-->
+                        <input id="inputName" type="text" placeholder="Range Reference" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon right">
+                        <!--                                    <i class="fa fa-user"></i>-->
+                        <input id="inputName" type="text" placeholder="Range Min" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon right">
+                        <!--                                    <i class="fa fa-user"></i>-->
+                        <input id="inputName" type="text" placeholder="Range Max" class="form-control" />
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

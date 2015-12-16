@@ -1,0 +1,91 @@
+@import "variable";
+
+body {
+    background: @background-troubleshoot;
+    background-size: cover;
+}
+
+.panel {
+    overflow: overlay;
+}
+
+.panel-blue {
+    background: none;
+}
+
+.panel-collapse,
+.collapse {
+    background: @panel-bg-blue;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.panel-heading {
+    text-align: center;
+}
+
+.panel-title {
+    color: @panel-bg-blue;
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-troubleshoot-answer {
+    width: 85px;
+    font-size: 1.9rem;
+    padding: 2px;
+    margin: 15px 5px;
+}
+
+.panel-body {
+    font-size: 2.5rem;
+}
+
+.modal-dialog {
+    position: absolute;
+    left: 25%;
+}
+
+.modal-header {
+    background: @bootstrap-red;
+    border-bottom: 2px solid white;
+}
+
+.modal-header .close {
+    color: white;
+    font-size: 5rem;
+}
+
+.modal-title {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px rgba(5, 5, 5, 0.3);
+    color: white;
+}
+
+.modal-footer button {
+    position: relative;
+    float: right;
+    font-size: 2.2rem;
+    border: none;
+    font-family: 'Pacifico', cursive;
+}
+
+.modal-body h4 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: black;
+}
+
+.modal-body p {
+    font-size: 2rem;
+    font-weight: 500;
+    color: @bootstrap-red;
+}
+
+.table-display-frame {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+}

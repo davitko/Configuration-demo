@@ -1,0 +1,208 @@
+﻿@{
+    ViewBag.Title = "environmentalTroubleshoot";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link type="text/css" rel="stylesheet" href="~/Content/myCss/troubleshoot.css">
+
+<div class="row table-display-frame">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+        <div class="panel panel-blue">
+            <div class="panel-heading">Troubleshooting questions</div>
+            <div class="panel-body">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Inactivity Check</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">Was the device use?</div>
+                            <button type="button" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                            <button type="button" data-toggle="modal" data-target="#inactivity-no" class="btn btn-danger btn-troubleshoot-answer">No</button>
+
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Data provenance</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">Did some one else used the device ?</div>
+                            <button type="button" data-toggle="modal" data-target="#dataProvenance-yes" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                            <button type="button" class="btn btn-danger btn-troubleshoot-answer">No</button>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Calibration Check</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">Is calibration ok?</div>
+                            <button type="button" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                            <button type="button" data-toggle="modal" data-target="#calibrationCheck-no" class="btn btn-danger btn-troubleshoot-answer">No</button>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Battery Issue</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">Do you have some battery issue ?</div>
+                            <button type="button" data-toggle="modal" data-target="#batteryIssue-yes" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                            <button type="button" class="btn btn-danger btn-troubleshoot-answer">No</button>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Calibration Check</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">Performed prescribed activities?</div>
+                            <button type="button" class="btn btn-success btn-troubleshoot-answer">Yes</button>
+                            <button type="button" data-toggle="modal" data-target="#performedActivities-no" class="btn btn-danger btn-troubleshoot-answer">No</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row control-button-frame">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 back-table-button">
+                        <a href="/Environmental/environmental">
+                            <button type="button" class="btn btn-primary btn-table-back"><i class="fa fa-angle-left"></i>&#32;&#32;&#32;back to Measurements List</button>
+                        </a>
+                    </div>
+                    <!--
+                       <div class="col-lg-4 col-md-5 col-sm-6 col-xs-7 control-table-button">
+                        <button type="button" class="btn btn-success btn-table-control"><i class="fa fa-angle-left"></i>&#32;&#32;&#32; Previous</button>
+                        <button type="button" class="btn btn-success btn-table-control">Next&#32;&#32;&#32;<i class="fa fa-angle-right"></i></button>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Inactivity check -->
+<div class="modal fade" id="inactivity-no" role="dialog">
+    <div class="modal-dialog col-lg-4">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Inactivity check Advice</h4>
+            </div>
+            <div class="modal-body">
+                <h4>DEVICE NOT WORK</h4>
+                <p>Please wear the device</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Data provenance -->
+<div class="modal fade" id="dataProvenance-yes" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Data provenance Advice</h4>
+            </div>
+            <div class="modal-body">
+                <h4>WRONG USER</h4>
+                <p>Please do not let others use your device.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Calibration Check-->
+<div class="modal fade" id="calibrationCheck-no" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Calibration Check Advice</h4>
+            </div>
+            <div class="modal-body">
+                <h4>CALIBRATION ISSUE</h4>
+                <p>Please recalibrate your device.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Battery Issue -->
+<div class="modal fade" id="batteryIssue-yes" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Battery Advice</h4>
+            </div>
+            <div class="modal-body">
+                <h4>BATTERY ISSUE</h4>
+                <p>Please check the batteries.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Performed prescribed activities -->
+<div class="modal fade" id="performedActivities-no" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Performed prescribed activities Advice</h4>
+            </div>
+            <div class="modal-body">
+                <h4>ADHERENCE ISSUE</h4>
+                <p>Please adhere to the treatment plan.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+

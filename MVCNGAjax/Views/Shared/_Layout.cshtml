@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html ng-app="validationModule">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASP.NET MVC Application with AngularJS using AJAX</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    @*<script src="~/Scripts/jquery-1.10.2.intellisense.js"></script>*@
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    @* My Angular *@
+    @*<script src="~/Scripts/Events/eventModule.js"></script>
+        <script src="~/Scripts/Events/EventsService.js"></script>*@
+    <script src="~/Scripts/ValidationProject/validationModule.js"></script>
+    <script src="~/Scripts/ValidationProject/ValidationServices.js"></script>
+
+
+
+    <!-- Custom CSS -->
+    <link href="~/Content/myCss/welcome.css" rel="stylesheet">
+    <link href="~/Content/myCss/main.css" rel="stylesheet">
+
+    <!--    Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <!--    Fonts -->
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700,300">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn/jquery-ui-1.10.4.custom.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!--  LogIn  Styles-->
+
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn/animate.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn/all.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn/main.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn/style-responsive.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn/zabuto_calendar.min.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn/pace.css">
+    @*<link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn/jquery.news-ticker.css">*@
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="~/Content/bootstrap.css" />
+
+    <!-- Custom Css -->
+    @*<link type="text/css" rel="stylesheet" href="~/Content/myCss/logIn.css">*@
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/carusel.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/menu.css">
+    <link type="text/css" rel="stylesheet" href="~/Content/myCss/sidebar-menu.css">
+
+</head>
+<body>
+
+
+
+
+
+
+    @RenderBody()
+
+    <!--Angular script -->
+    <script src="~/Scripts/myScripts/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.8/angular-route.min.js"></script>
+    <script src="~/Scripts/ValidationProject/cssDirective.js"></script>
+    <script src="~/Scripts/angular-css.min.js"></script>
+
+
+
+
+    <!-- ------- Include Scripts: ---------------- -->
+    <!-- jQuery -->
+    <script src="~/Scripts/myScripts/jquery.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @*<script src="~/Scripts/myScripts/bootstrap.min.js"></script>*@
+
+    <!-- Less -->
+    <script src="~/Scripts/myScripts/less.min.js" type="text/javascript"></script>
+
+
+    <!-- Script to Activate the Carousel -->
+    <script src="~/Scripts/myScripts/carusel.js" type="text/javascript"></script>
+
+
+    <!--JQuery Script -->
+    <script src="~/Scripts/myScripts/logIn/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery-migrate-1.2.1.min.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery-ui.js"></script>
+    <!-- LogIn script -->
+    <script src="~/Scripts/myScripts/logIn/bootstrap.min.js"></script>
+    <script src="~/Scripts/myScripts/logIn/bootstrap-hover-dropdown.js"></script>
+    <script src="~/Scripts/myScripts/logIn/html5shiv.js"></script>
+    <script src="~/Scripts/myScripts/logIn/respond.min.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.metisMenu.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.slimscroll.js"></script>
+    @*<script src="~/Scripts/myScripts/logIn/jquery.cookie.js"></script>*@
+    <script src="~/Scripts/myScripts/logIn/icheck.min.js"></script>
+    <script src="~/Scripts/myScripts/logIn/custom.min.js"></script>
+    @*<script src="~/Scripts/myScripts/logIn/jquery.news-ticker.js"></script>*@
+    <script src="~/Scripts/myScripts/logIn/jquery.menu.js"></script>
+    <script src="~/Scripts/myScripts/logIn/pace.min.js"></script>
+    <script src="~/Scripts/myScripts/logIn/holder.js"></script>
+    <script src="~/Scripts/myScripts/logIn/responsive-tabs.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.flot.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.flot.categories.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.flot.pie.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.flot.tooltip.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.flot.resize.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.flot.fillbetween.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.flot.stack.js"></script>
+    <script src="~/Scripts/myScripts/logIn/jquery.flot.spline.js"></script>
+    <script src="~/Scripts/myScripts/logIn/zabuto_calendar.min.js"></script>
+    <script src="~/Scripts/myScripts/logIn/index.js"></script>
+    <!--LOADING SCRIPTS FOR CHARTS-->
+    <script src="~/Scripts/myScripts/logIn/highcharts.js"></script>
+    <script src="~/Scripts/myScripts/logIn/data.js"></script>
+    <script src="~/Scripts/myScripts/logIn/drilldown.js"></script>
+    <script src="~/Scripts/myScripts/logIn/exporting.js"></script>
+    <script src="~/Scripts/myScripts/logIn/highcharts-more.js"></script>
+    <script src="~/Scripts/myScripts/logIn/charts-highchart-pie.js"></script>
+    <script src="~/Scripts/myScripts/logIn/charts-highchart-more.js"></script>
+    <!--CORE JAVASCRIPT-->
+    <script src="~/Scripts/myScripts/logIn/main.js"></script>
+
+    <!-- Menu js -->
+    <script src="~/Scripts/myScripts/menu.js"></script>
+
+</body>
+</html>

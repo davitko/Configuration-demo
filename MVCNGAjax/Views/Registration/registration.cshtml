@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link type="text/css" rel="stylesheet" href="~/Content/myCss/register.css">
+
+<div class="row registration-frame">
+    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+        <div class="panel panel-orange">
+            <div class="panel-heading">
+                Registration
+            </div>
+            <div class="panel-body pan">
+                <form action="#">
+                    <div class="form-body pal">
+                        <div class="form-group">
+                            <div class="input-icon right">
+                                <!--                                    <i class="fa fa-user"></i>-->
+                                <input id="inputName" type="text" placeholder="Username" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon right">
+                                <!--                                    <i class="fa fa-envelope"></i>-->
+                                <input id="inputEmail" type="text" placeholder="Email address" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon right">
+                                <!--                                    <i class="fa fa-envelope"></i>-->
+                                <input id="inputEmail" type="text" placeholder="Windows account" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon right">
+                                <!--                                    <i class="fa fa-lock"></i>-->
+                                <input id="inputPassword" type="password" placeholder="Password" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon right">
+                                <!--                                   <i class="fa fa-lock"></i>-->
+                                <input id="inputConfirmPassword" type="password" placeholder="Confirm Password" class="form-control" />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="inputFirstName" type="text" placeholder="First Name" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="inputLastName" type="text" placeholder="Last Name" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Gender</option>
+                                <option value="0">Male</option>
+                                <option value="1">Female</option>
+                                <option value="2">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group mbn checkbox-form">
+                            <div class="checkbox checkbox-terms-conditions">
+                                <label>
+                                    <input tabindex="5" type="checkbox" />&nbsp; I agree with the Terms and Conditions
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-actions text-right">
+                            <a href="sensorSelect.html">
+                                <button type="button" class="btn btn-primary btn-form-submit">
+                                    @Html.ActionLink("Submit", "selectSensor", "SelectSensor")
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+

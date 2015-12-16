@@ -1,0 +1,145 @@
+﻿@{
+    ViewBag.Title = "enviromentalDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link type="text/css" rel="stylesheet" href="~/Content/myCss/environmental.css">
+
+
+<div class="row table-display-frame">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+        <div class="panel panel-red">
+            <div class="panel-heading">Detail of Environmental Measurements</div>
+            <div class="panel-body">
+                <table class="table table-hover table-bordered display-table col-lg-10">
+                    <thead>
+                        <tr class="heading-row">
+
+                            <th>Sensors</th>
+                            <th>Value</th>
+                            <th>Unit</th>
+                            <th>Q1.A</th>
+                            <th>Q2.B</th>
+                            <th>Q3.C</th>
+                            <th>Q5</th>
+                            <th>Overal Quality</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active">
+                            <td>Temperature</td>
+                            <td>21.30</td>
+                            <td>&#186; C</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="danger">Low</td>
+                            <td class="success">Heigh</td>
+
+
+                            <!--
+                                                         <td>982 mbar</td>
+                            <td>45%</td>
+                            <td>563</td>
+                            <td>2 lux</td>
+                            <td>80 dBa</td>
+                            <td>75%</td>
+                            <td>-52</td>
+                            <td class="success">Good</td>
+                            -->
+                        </tr>
+                        <tr class="active">
+                            <td>Pressure</td>
+                            <td>982 </td>
+                            <td>mbar</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="danger">Low</td>
+                            <td class="success">Heigh</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Humidity</td>
+                            <td>45</td>
+                            <td>%</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="danger">Low</td>
+                            <td class="success">Heigh</td>
+                        </tr>
+                        <tr class="active">
+                            <td>VOC</td>
+                            <td>563</td>
+                            <td></td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="danger">Low</td>
+                            <td class="danger">
+                                <a href="/Troubleshoot/environmentalTroubleshoot">
+                                    <button type="button" class="btn btn-danger">Troubleshoot</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>Light</td>
+                            <td>2 </td>
+                            <td>lux</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="danger">Low</td>
+                            <td class="success">Heigh</td>
+                        </tr>
+                        <tr class="active">
+                            <td>Noise</td>
+                            <td>80 </td>
+                            <td>dBa</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="danger">Low</td>
+                            <td class="danger">
+                                <a href="/Troubleshoot/environmentalTroubleshoot">
+                                    <button type="button" class="btn btn-danger">Troubleshoot</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="active">
+                            <td>Battery</td>
+                            <td>75</td>
+                            <td>%</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="success">Heigh</td>
+                            <td class="danger">Low</td>
+                            <td class="warning">
+                                <a href="#" data-toggle="tooltip" class="hover-advice" title="Problem is...!">
+                                    <button type="button" data-toggle="modal" data-target="#battery-low" class="btn btn-danger btn-troubleshoot-answer">Low</button>
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="row control-button-frame">
+                    <div class="col-lg-6 col-md-7 col-sm-8 col-xs-9 back-table-button">
+                        <a href="/Environmental/environmental">
+                            <button type="button" class="btn btn-danger btn-table-back"><i class="fa fa-angle-left"></i>&#32;&#32;&#32;back to All Environmental Measurements</button>
+                        </a>
+                    </div>
+                    <!--
+                                          <div class="col-lg-4 col-md-5 col-sm-6 col-xs-7 control-table-button">
+                        <button type="button" class="btn btn-danger btn-table-control"><i class="fa fa-angle-left"></i>&#32;&#32;&#32; Previous</button>
+                        <button type="button" class="btn btn-danger btn-table-control">Next&#32;&#32;&#32;<i class="fa fa-angle-right"></i></button>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

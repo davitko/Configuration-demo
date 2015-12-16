@@ -1,0 +1,58 @@
+﻿
+<div class="row table-display-frame">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+        <div class="panel panel-green">
+            <div class="panel-heading">HealtCare Measurements</div>
+            <div class="panel-body">
+                <table class="table table-hover table-bordered display-table col-lg-10">
+                    <thead>
+                        <tr class="heading-row">
+                            <th>No.</th>
+                            <th>Date & Time</th>
+                            <th>Activity</th>
+                            <th>Distance</th>
+                            <th>Duration</th>
+                            <th>Acceleration</th>
+                            <th>Altitude</th>
+                            <th>Heart Rate</th>
+                            <th>Energy</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="active" ng-repeat="measurement in healtCareData">
+                            <td>{{measurement.id}}</td>
+                            <td>{{measurement.date}}</td>
+                            <td>{{measurement.activity}}</td>
+                            <td>{{measurement.distance}} km</td>
+                            <td>{{measurement.duration}} h</td>
+                            <td>{{measurement.accelerometer}} km/h</td>
+                            <td>{{measurement.altimeter}} m</td>
+                            <td>{{measurement.heartRate}} </td>
+                            <td>{{measurement.energy}} kcal</td>
+                            <td>
+                                <a href="/healtCareDetails">
+                                    <button type="button" ata-value="bounce" class="btn btn-primary btn-table-details"><i class="fa fa-bars"></i></button>
+                                </a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="row control-button-frame">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 back-table-button">
+                        <a href="/sensorSelect">
+                            <button type="button" class="btn btn-success btn-table-back"><i class="fa fa-angle-left"></i>&#32;&#32;&#32;back to Sensors Select</button>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-7 control-table-button">
+                        <button type="button" class="btn btn-success btn-table-control"><i class="fa fa-angle-left"></i>&#32;&#32;&#32; Previous</button>
+                        <button type="button" class="btn btn-success btn-table-control">Next&#32;&#32;&#32;<i class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

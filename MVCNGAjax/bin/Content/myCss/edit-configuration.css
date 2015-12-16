@@ -1,0 +1,122 @@
+body {
+    background: url('../img/background/pattern-2.png') repeat;
+}
+
+.panel-body {
+    background: rgba(10,10,10,0.5);
+}
+
+.panel-body-modal {
+    overflow-x: auto;
+}
+
+.editConfig-frame {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+}
+
+.panel-heading {
+    font-family: 'Lobster',cursive;
+    font-size: 3rem;
+    background: rgba(220,220,220,0.5);
+    border-bottom: 2px solid #fff;
+    color: #000;
+    min-height: 50px;
+    text-shadow: 5px 5px 5px rgba(255,255,255,0.9);
+}
+
+.modal-header {
+    background: #808080;
+    color: #fff;
+    padding: 15px;
+    border-bottom: 2px solid #fff;
+}
+
+    .modal-header .close {
+        color: #fff;
+        font-size: 5rem;
+        margin-top: -2px;
+    }
+
+.modal-body {
+    position: relative;
+    padding: 20px;
+}
+
+.modal-title {
+    font-family: 'Lobster',cursive;
+    font-size: 3rem;
+    text-shadow: 5px 5px 5px rgba(5,5,5,0.3);
+    color: #fff;
+}
+
+.modal-body h4 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.input-group-addon {
+    background: none;
+    border: none;
+}
+
+.app-check {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.col-edit-checkbox {
+    margin-top: 7px;
+}
+
+.head-row-checkbox-group {
+    border-bottom: 1px solid #fff;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.panel-title {
+    color: rgba(10,129,156,0.9);
+    font-size: 2.3rem;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.createdBy-input-label {
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 5px 0;
+}
+
+.btn-search {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.search-panel-submit {
+    padding: 0;
+}
+
+.search-panel {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 100% !important;
+}
+
+.search-panel-heading {
+    padding: 0;
+}
+
+.panel-content {
+    max-height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.heading-row {
+    color: #fff;
+}

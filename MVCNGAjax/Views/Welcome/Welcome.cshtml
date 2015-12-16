@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link type="text/css" rel="stylesheet" href="~/Content/myCss/welcome.css">
+
+<script src="~/Scripts/Events/speakerController.js"></script>
+<script src="~/Scripts/Events/eventcontroller.js"></script>
+<script src="~/Scripts/Events/talkController.js"></script>
+<div class="container">
+    @*<div class="navbar navbar-default">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li class="navbar-brand"><a href="/Events/Talks">Talks</a></li>
+                    <li class="navbar-brand"><a href="/Events/Speakers">Speakers</a></li>
+                    <li class="navbar-brand"><a href="/Events/AddTalk">Add Talk</a></li>
+                </ul>
+
+            </div>
+        </div>*@
+
+
+
+    <!-- Title -->
+    <div class="row welcome-content">
+        <div class="col-lg-12 col-md-12 col-sm-12 welcome-title">
+            <h1> Validation </h1>
+        </div>
+        <div class="col-lg-3 col-lg-pffset-3 welcome-button">
+
+
+            <button type="button" class="btn btn-default btn-welcome"> @Html.ActionLink("Log In", "logIn", "LogIn")</button>
+
+            <a href="/Registration/registration">
+                <button type="button" class="btn btn-default btn-welcome">Registration</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div ng-view>
+
+    </div>
+</div>
