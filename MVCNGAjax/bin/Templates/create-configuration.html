@@ -5,17 +5,15 @@
                 Create Configuration
             </div>
             <div class="panel-body pan">
-                <form action="#">
+                <form ng-controller="createConfigController">
                     <div class="form-body pal">
                         <div class="form-group">
                             <div class="input-icon right">
-                                <!--                                    <i class="fa fa-user"></i>-->
                                 <input id="inputName" type="text" placeholder="Title" class="form-control" />
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="input-icon right">
-                                <!--                                    <i class="fa fa-envelope"></i>-->
                                 <input id="inputEmail" type="text" placeholder="Description" class="form-control" />
                             </div>
                         </div>
@@ -32,10 +30,9 @@
                                 <!--                                    <i class="fa fa-envelope"></i>-->
                                 <!--<input id="inputEmail" type="text" placeholder="Create Date" class="form-control" />-->
 
-                                <md-content>
-                                    <md-datepicker ng-model="myDate" md-placeholder="Create Date"></md-datepicker>
-                                </md-content>
-
+                                <div ng-controller="DatepickerDemoCtrl">
+                                    <uib-datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></uib-datepicker>
+                                </div>
                             </div>
                         </div>
 
@@ -261,7 +258,7 @@
                             <div class="panel-heading">
                                 <div class="col-lg-6">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Quolifiers</a>
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Qualifiers</a>
                                     </h4>
                                 </div>
                                 <div class="search-panel-heading col-lg-5 ">
@@ -282,7 +279,6 @@
                                         <div class="row head-row-checkbox-group">
                                             <div class="col-lg-2 col-edit-checkbox">
                                                 <span class="input-group-addon">
-                                                    <!--                                                       <input class="edit-checkbox" type="checkbox" aria-label="...">-->
                                                 </span>
                                             </div>
                                             <div class="col-lg-2">
@@ -384,31 +380,11 @@
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Frequency</a>
                                     </h4>
                                 </div>
-                                <!--
-                                                                   <div class="search-panel-heading col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-1">
-                                    <form class="" role="search">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control search-panel" placeholder="Search">
-                                        </div>
-
-                                    </form>
-                                </div>
-                                <div class="search-panel-submit col-lg-1 col-lg-offset-0">
-                                    <button type="submit" class="btn btn-default btn-search"><i class=" fa fa-search "></i></button>
-                                </div>
-                                -->
                             </div>
                             <div id="collapse4" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <div class="input-group app-check col-lg-12 col-md-12 col-sm-12">
                                         <div class="row">
-                                            <!--
-                                                                                          <div class="col-lg-12 col-edit-checkbox">
-                                                <span class="input-group-addon">
-                                                                                           <input id="inputName" type="text" placeholder="Starting point" class="form-control" />
-                                                                                        </span>
-                                            </div>
-                                            -->
                                             <div class="col-lg-7">
                                                 <span class="input-group-addon">
                                                     <input id="inputName" type="text" placeholder="Frequency" class="form-control" />
@@ -526,7 +502,7 @@
                         </div>
 
 
-
+                        <!-- Agree Div -->
                         <div class="form-group mbn checkbox-form">
                             <div class="checkbox checkbox-terms-conditions">
                                 <label>
@@ -534,13 +510,12 @@
                                 </label>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-actions text-right pal">
 
-                        <button type="button" class="btn btn-primary btn-form-submit" data-toggle="modal" data-target="#checkout-dialog">
-                            Create
-                        </button>
-
+                        <div class="form-actions text-right">
+                            <button type="button" class="btn btn-primary btn-form-submit" data-toggle="modal" data-target="#checkout-dialog">
+                                Create
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>

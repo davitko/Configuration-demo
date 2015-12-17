@@ -133,6 +133,6 @@ D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Syst
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\System.Web.Webpages.Razor.xml
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\System.Web.Helpers.xml
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\System.Web.Mvc.xml
-D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\obj\Debug\MVCNGAjax.csprojResolveAssemblyReference.cache
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\obj\Debug\MVCNGAjax.dll
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\obj\Debug\MVCNGAjax.pdb
+D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\obj\Debug\MVCNGAjax.csprojResolveAssemblyReference.cache
