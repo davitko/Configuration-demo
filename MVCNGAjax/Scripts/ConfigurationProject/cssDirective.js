@@ -1,4 +1,4 @@
-﻿var app = angular.module('validationModule');
+﻿var app = angular.module('configurationModule');
 
 app.directive('head', ['$rootScope', '$compile',
     function ($rootScope, $compile) {

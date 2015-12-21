@@ -1,6 +1,6 @@
-﻿var app = angular.module("validationModule");
+﻿var app = angular.module("configurationModule");
 
-app.factory("ValidationServices", function ($http, $q) {
+app.factory("ConfigurationServices", function ($http, $q) {
     return {
         getData: function () {
             // Get the deferred object

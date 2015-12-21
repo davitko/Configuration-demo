@@ -1,4 +1,4 @@
-﻿var app = angular.module('validationModule');
+﻿var app = angular.module('configurationModule');
 
 app.controller("environmentalController", function ($scope, ValidationServices) {
     ValidationServices.getData().then(function (environmentalData) { $scope.environmentalData = environmentalData }, function () {

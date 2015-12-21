@@ -1,5 +1,5 @@
-﻿var app = angular.module('validationModule');
-app.controller("welcomeController", function ($scope, ValidationServices) {
+﻿var app = angular.module("configurationModule");
+app.controller("welcomeController", function ($scope, ConfigurationServices) {
 
 });
 

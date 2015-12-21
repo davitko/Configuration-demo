@@ -1,4 +1,6 @@
-﻿var validationModule = angular.module("validationModule", ["ui.bootstrap"]).config(function ($routeProvider, $locationProvider) {
+﻿var app = angular.module("configurationModule", []);
+
+app.config(function ($routeProvider, $locationProvider) {
     //Path - it should be same as href link
     $routeProvider.when("/", { templateUrl: "/Templates/welcome.html", controller: "welcomeController", css: "/Content/myCss/welcome.css" });
     $routeProvider.when("/Configuration/index", { templateUrl: "/Templates/welcome.html", controller: "welcomeController", css: "/Content/myCss/welcome.css" });

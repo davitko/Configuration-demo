@@ -3,7 +3,7 @@ body {
 }
 
 .panel-body {
-    background: rgba(10,10,10,0.5);
+    background: rgba(10, 10, 10, 0.5);
 }
 
 .panel-body-modal {
@@ -17,13 +17,13 @@ body {
 }
 
 .panel-heading {
-    font-family: 'Lobster',cursive;
+    font-family: 'Lobster', cursive;
     font-size: 3rem;
-    background: rgba(220,220,220,0.5);
+    background: rgba(220, 220, 220, 0.5);
     border-bottom: 2px solid #fff;
     color: #000;
     min-height: 50px;
-    text-shadow: 5px 5px 5px rgba(255,255,255,0.9);
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.9);
 }
 
 .modal-header {
@@ -45,9 +45,9 @@ body {
 }
 
 .modal-title {
-    font-family: 'Lobster',cursive;
+    font-family: 'Lobster', cursive;
     font-size: 3rem;
-    text-shadow: 5px 5px 5px rgba(5,5,5,0.3);
+    text-shadow: 5px 5px 5px rgba(5, 5, 5, 0.3);
     color: #fff;
 }
 
@@ -79,9 +79,9 @@ body {
 }
 
 .panel-title {
-    color: rgba(10,129,156,0.9);
+    color: rgba(10, 129, 156, 0.9);
     font-size: 2.3rem;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .createdBy-input-label {

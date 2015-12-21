@@ -309,19 +309,21 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-resource.min.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap-tpls.min.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap.js" />
     <Content Include="Scripts\angular-ui\ui-bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angularDatePicker.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\ui-bootstrap-0.14.3.js" />
     <Content Include="Scripts\ui-bootstrap-tpls-0.14.3.min.js" />
-    <Content Include="Scripts\ValidationProject\createConfigController.js" />
-    <Content Include="Scripts\ValidationProject\cssDirective.js" />
-    <Content Include="Scripts\ValidationProject\dataTimePicker.js" />
-    <Content Include="Scripts\ValidationProject\environmentalController.js" />
+    <Content Include="Scripts\ConfigurationProject\createConfigController.js" />
+    <Content Include="Scripts\ConfigurationProject\cssDirective.js" />
+    <Content Include="Scripts\ConfigurationProject\dataTimePicker.js" />
     <Content Include="Scripts\Events\eventController.js" />
     <Content Include="Scripts\Events\eventModule.js" />
     <Content Include="Content\myLess\configuration.less" />
@@ -425,12 +427,11 @@
     <Content Include="Scripts\myScripts\login\zabuto_calendar.min.js" />
     <Content Include="Scripts\myScripts\menu.js" />
     <Content Include="Scripts\myScripts\moment.js" />
-    <Content Include="Scripts\ValidationProject\healtCareController.js" />
-    <Content Include="Scripts\ValidationProject\validationModule.js">
+    <Content Include="Scripts\ConfigurationProject\configurationModule.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Scripts\ValidationProject\ValidationServices.js" />
-    <Content Include="Scripts\ValidationProject\welcomeController.js" />
+    <Content Include="Scripts\ConfigurationProject\ConfigurationServices.js" />
+    <Content Include="Scripts\ConfigurationProject\welcomeController.js" />
     <Content Include="Templates\AddTalk.html" />
     <Content Include="Templates\create-configuration.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -475,7 +476,9 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Templates\ViewPage1.cshtml" />
-    <Content Include="Views\Configuration\index.cshtml" />
+    <Content Include="Views\Configuration\Index.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

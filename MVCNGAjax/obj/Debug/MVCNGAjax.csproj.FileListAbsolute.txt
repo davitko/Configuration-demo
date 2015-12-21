@@ -112,7 +112,6 @@ D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Cont
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Content\myCss\edit-configuration.css
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Content\myCss\user-overview.css
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Content\myCss\welcome.css
-D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Scripts\ValidationProject\validationModule.js
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Templates\create-configuration.html
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Templates\edit-configuration.html
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Templates\user-overview.html
@@ -135,4 +134,6 @@ D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Syst
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\System.Web.Mvc.xml
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\obj\Debug\MVCNGAjax.dll
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\obj\Debug\MVCNGAjax.pdb
+D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Views\Configuration\Index.cshtml
 D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\obj\Debug\MVCNGAjax.csprojResolveAssemblyReference.cache
+D:\Work\5M\Demo Projects\AngularJS\CF part\Configuration-demo\MVCNGAjax\bin\Scripts\ConfigurationProject\configurationModule.js

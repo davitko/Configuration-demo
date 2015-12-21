@@ -1,7 +1,5 @@
-﻿var app = angular.module('validationModule');
-app.controller("createConfigController", function ($rootScope, $scope, ValidationServices) {
-
-
+angular.module('MyForm', ['ngAnimate', 'ui.bootstrap']);
+angular.module('MyForm').controller('DatePickerCtrl', function ($scope) {
     $scope.today = function () {
         $scope.dt = new Date();
     };
@@ -46,17 +44,16 @@ app.controller("createConfigController", function ($rootScope, $scope, Validatio
     tomorrow.setDate(tomorrow.getDate() + 1);
     var afterTomorrow = new Date();
     afterTomorrow.setDate(tomorrow.getDate() + 2);
-    $scope.events =
-      [
+    $scope.events = [
         {
             date: tomorrow,
             status: 'full'
-        },
+      },
         {
             date: afterTomorrow,
             status: 'partially'
-        }
-      ];
+      }
+    ];
 
     $scope.getDayClass = function (date, mode) {
         if (mode === 'day') {
@@ -73,6 +70,4 @@ app.controller("createConfigController", function ($rootScope, $scope, Validatio
 
         return '';
     };
-
-
 });
